@@ -1,0 +1,39 @@
+@use "../global/" as *;
+
+.l-header{
+  background-color: map-get($color, main);
+  height: $header-height;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  @include mq('sp') {
+		height: $header-height-sp;
+	}
+}
+
+.l-header__inner{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.l-header__nav{
+  padding-left: 145px;
+	width: calc(100% - 230px - 112px);
+	height: inherit;
+
+  @include mq(m){
+		padding-left: 10px;
+		width: calc(100% - 180px - 112px);  }
+
+  @include mq(sp){
+		display: none;
+		padding-left: auto;
+		width: auto;
+  }
+}

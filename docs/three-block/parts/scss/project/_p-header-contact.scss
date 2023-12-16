@@ -1,0 +1,55 @@
+@use "../global/" as *;
+
+.p-header-contact {
+	margin-left: auto;
+
+	@include mq('sp') {
+		display: none;
+		width: auto;
+	}
+}
+
+.p-header-contact__button {
+
+}
+
+.p-header-contact__button-tel {
+  display: inline-block;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 0 3px 6px rgba(#000, 0.16);
+	cursor: pointer;
+	transition: opacity 0.3s ease 0s;
+	padding: 0.75em 1.5em;
+	// font-size: 16px;
+	border-radius: 8px;
+	background: map-get($color, accent);
+	width: 112px;
+	max-width: 100%;
+
+	@include hover();
+
+	@include mq(m) {
+		// font-size: 16px;
+	}
+
+	@include mq('sp') {
+		padding: 0.25em 1.125em;
+		border-radius: 6px;
+	}
+}
+
+.p-header-contact__time {
+	margin-top: 0.5rem;
+	font-size: 0.75rem;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1;
+	white-space: nowrap;
+
+	@include mq('m') {
+		font-size: 0.75rem;
+	}
+}

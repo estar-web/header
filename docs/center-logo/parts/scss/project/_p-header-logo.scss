@@ -1,0 +1,23 @@
+@use "../global/" as *;
+
+.p-header-logo {
+  font-size: 1.5rem;
+}
+
+.p-header-logo__link {
+
+}
+
+.p-header-logo__img {
+  width: 205px;
+  vertical-align: top;
+
+  @include mq('m') {
+    width: 180px;
+  }
+
+  @include mq('sp') {
+    width: 148px;
+  }
+}
+

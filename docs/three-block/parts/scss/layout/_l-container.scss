@@ -1,0 +1,8 @@
+@use "../global/" as *;
+
+.l-inner{
+  width: $m-inner;
+  max-width: 100%;
+  margin: 0 auto;
+  height: inherit;
+}

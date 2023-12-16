@@ -1,0 +1,21 @@
+@use "../global/" as *;
+
+.l-header {
+  background: map-get($color, main);
+  width: 100%;
+  //ヘッダーをトップに固定
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: map-get($z-map , header);
+}
+
+.l-header__nav {
+  background-color:#9FA3B9;
+  height: inherit;
+  width: 100%;
+  border-top: 1px solid #9FA3B9;
+  border-bottom: 1px solid #9FA3B9;
+  overflow: auto;
+}
+
